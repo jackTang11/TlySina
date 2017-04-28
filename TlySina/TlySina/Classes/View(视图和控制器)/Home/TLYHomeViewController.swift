@@ -32,7 +32,7 @@ extension TLYHomeViewController{
     
     override func setupUI() {
         super.setupUI()
-       navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 15, self, action: #selector(showFriends))
+       navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 15, self, action: #selector(showFriends),false)
     }
     
 }

@@ -10,6 +10,7 @@ import UIKit
 
 class TLYMainViewController: UITabBarController {
     
+    
     lazy var composeButton : UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
     
     override func viewDidLoad() {
@@ -20,6 +21,7 @@ class TLYMainViewController: UITabBarController {
     }
     
     
+   
     
   @objc fileprivate func middleClick(){
             print("....")

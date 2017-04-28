@@ -21,15 +21,13 @@ class TLYNavController: UINavigationController {
         if(childViewControllers.count  > 0){
             viewController.hidesBottomBarWhenPushed = true
             
-            
             if let vc = viewController as? TLYBaseViewController{
                 var title = "返回"
                 
                 if childViewControllers.count == 1 {
                     title = childViewControllers.first?.title ?? "返回"
                 }
-                
-                vc.navItem.leftBarButtonItem = UIBarButtonItem(title: title, self, action: #selector(back))
+                vc.navItem.leftBarButtonItem = UIBarButtonItem(title: title, self, action: #selector(back),true)
             }
             
             

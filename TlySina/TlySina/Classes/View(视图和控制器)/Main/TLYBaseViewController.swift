@@ -34,5 +34,6 @@ extension TLYBaseViewController{
         view.addSubview(navigation)
         view.backgroundColor = UIColor.cz_random()
         navigation.items = [navItem]
+        navigation.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.darkGray]
     }
 }
