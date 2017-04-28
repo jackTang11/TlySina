@@ -9,27 +9,40 @@
 import UIKit
 
 class TLYNavController: UINavigationController {
-
-    override func viewDidLoad() {
+    
+      override func viewDidLoad() {
         super.viewDidLoad()
+        navigationBar.isHidden = true
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+  
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        if(childViewControllers.count  > 0){
+            viewController.hidesBottomBarWhenPushed = true
+            
+            
+            if let vc = viewController as? TLYBaseViewController{
+                var title = "返回"
+                
+                if childViewControllers.count == 1 {
+                    title = childViewControllers.first?.title ?? "返回"
+                }
+                
+                vc.navItem.leftBarButtonItem = UIBarButtonItem(title: title, self, action: #selector(back))
+            }
+            
+            
+        } 
+        super.pushViewController(viewController, animated: true)
     }
-    */
+    
+}
+
+extension TLYNavController{
+
+    func back(){
+        popViewController(animated: true)
+    }
 
 }

@@ -31,6 +31,8 @@
 		BDD4EF9C1EB2DF2E00B1B23B /* TLYMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD4EF9B1EB2DF2E00B1B23B /* TLYMessageController.swift */; };
 		BDD4EF9E1EB2DF3A00B1B23B /* TLYProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD4EF9D1EB2DF3A00B1B23B /* TLYProfileController.swift */; };
 		BDD4EFA11EB2E25400B1B23B /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD4EFA01EB2E25400B1B23B /* Bundle+Extension.swift */; };
+		BDD4EFA41EB31EEA00B1B23B /* TLYTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD4EFA31EB31EEA00B1B23B /* TLYTestController.swift */; };
+		BDD4EFA61EB3280E00B1B23B /* UIBarButtonItem-Entension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD4EFA51EB3280E00B1B23B /* UIBarButtonItem-Entension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		BDD4EF9B1EB2DF2E00B1B23B /* TLYMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLYMessageController.swift; sourceTree = "<group>"; };
 		BDD4EF9D1EB2DF3A00B1B23B /* TLYProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLYProfileController.swift; sourceTree = "<group>"; };
 		BDD4EFA01EB2E25400B1B23B /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		BDD4EFA31EB31EEA00B1B23B /* TLYTestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLYTestController.swift; sourceTree = "<group>"; };
+		BDD4EFA51EB3280E00B1B23B /* UIBarButtonItem-Entension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Entension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +219,7 @@
 		BDD4EF7E1EB2DA7100B1B23B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				BDD4EFA21EB31EC900B1B23B /* Test */,
 				BDD4EF8F1EB2DE9800B1B23B /* TLYMainViewController.swift */,
 				BDD4EF911EB2DEAD00B1B23B /* TLYBaseViewController.swift */,
 				BDD4EF931EB2DED400B1B23B /* TLYNavController.swift */,
@@ -249,8 +254,17 @@
 			isa = PBXGroup;
 			children = (
 				BDD4EFA01EB2E25400B1B23B /* Bundle+Extension.swift */,
+				BDD4EFA51EB3280E00B1B23B /* UIBarButtonItem-Entension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		BDD4EFA21EB31EC900B1B23B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				BDD4EFA31EB31EEA00B1B23B /* TLYTestController.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,12 +345,14 @@
 				BDD4EF511EB2D72D00B1B23B /* TlySina.xcdatamodeld in Sources */,
 				BDD4EF881EB2DA7100B1B23B /* UIButton+CZAddition.m in Sources */,
 				BDD4EF821EB2DA7100B1B23B /* NSArray+Log.m in Sources */,
+				BDD4EFA61EB3280E00B1B23B /* UIBarButtonItem-Entension.swift in Sources */,
 				BDD4EF831EB2DA7100B1B23B /* NSAttributedString+CZAdditon.m in Sources */,
 				BDD4EF871EB2DA7100B1B23B /* NSString+CZPath.m in Sources */,
 				BDD4EFA11EB2E25400B1B23B /* Bundle+Extension.swift in Sources */,
 				BDD4EF851EB2DA7100B1B23B /* NSString+CZBase64.m in Sources */,
 				BDD4EF9A1EB2DF2300B1B23B /* TLYDiscoverController.swift in Sources */,
 				BDD4EF9E1EB2DF3A00B1B23B /* TLYProfileController.swift in Sources */,
+				BDD4EFA41EB31EEA00B1B23B /* TLYTestController.swift in Sources */,
 				BDD4EF921EB2DEAD00B1B23B /* TLYBaseViewController.swift in Sources */,
 				BDD4EF891EB2DA7100B1B23B /* UIColor+CZAddition.m in Sources */,
 				BDD4EF981EB2DF1600B1B23B /* TLYComposeController.swift in Sources */,

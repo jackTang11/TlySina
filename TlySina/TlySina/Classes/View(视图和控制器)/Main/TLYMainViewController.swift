@@ -16,29 +16,33 @@ class TLYMainViewController: UITabBarController {
         super.viewDidLoad()
 
        setChildController()
-        setupComposeButton()
+       setupComposeButton()
     }
     
     
     
+  @objc fileprivate func middleClick(){
+            print("....")
+    }
 
 }
 
 extension TLYMainViewController {
     
     //添加中间按钮
-    func setupComposeButton(){
+  fileprivate  func setupComposeButton(){
         tabBar.addSubview(composeButton)
         
         let count = CGFloat(childViewControllers.count)
         let w = tabBar.bounds.width / count-1
-        
         composeButton.frame = tabBar.bounds.insetBy(dx: w*2, dy: 0)
+    
+        composeButton.addTarget(self, action: #selector(middleClick), for: .touchUpInside)
     }
     
     
     //准备自控制器
-   func setChildController(){
+  fileprivate func setChildController(){
     
     let array = [
         ["clsName":"TLYHomeViewController", "titleName":"首页", "imageName":"home"],
@@ -48,9 +52,14 @@ extension TLYMainViewController {
         ["clsName":"TLYProfileController", "titleName":"我的", "imageName":"profile"],
     ]
 
+    var arrayM : [UIViewController] = [UIViewController]()
+    
     for dict in array {
-        addChildViewController(controller(dict: dict))
+        arrayM.append(controller(dict: dict))
     }
+    
+    viewControllers = arrayM
+    
 }
     
     

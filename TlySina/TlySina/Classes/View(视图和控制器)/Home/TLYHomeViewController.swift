@@ -12,23 +12,27 @@ class TLYHomeViewController: TLYBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.red
+        
        }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    @objc fileprivate func showFriends(){
+    
+        print(#function)
+        
+        let vc = TLYTestController()
+        vc.hidesBottomBarWhenPushed = true;
+        navigationController?.pushViewController(vc , animated: true);
+        
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension TLYHomeViewController{
+    
+    override func setupUI() {
+        super.setupUI()
+       navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 15, self, action: #selector(showFriends))
     }
-    */
-
+    
 }
