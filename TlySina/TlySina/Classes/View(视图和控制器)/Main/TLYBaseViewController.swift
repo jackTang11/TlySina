@@ -10,6 +10,8 @@ import UIKit
 
 class TLYBaseViewController: UIViewController {
 
+    
+    var tabview : UITableView?
     lazy var navigation = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.cz_screenWidth(), height: 64))
     lazy var navItem = UINavigationItem()
     
@@ -31,9 +33,42 @@ class TLYBaseViewController: UIViewController {
 extension TLYBaseViewController{
     
     func setupUI(){
+        setNavBar()
+        setTableView()
+    }
+    
+    private func setNavBar(){
         view.addSubview(navigation)
         view.backgroundColor = UIColor.cz_random()
         navigation.items = [navItem]
+        automaticallyAdjustsScrollViewInsets = false
         navigation.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.darkGray]
     }
+    
+    
+    private func setTableView(){
+        tabview = UITableView(frame: view.bounds, style: .plain)
+        view.insertSubview(tabview!, belowSubview: navigation);
+        tabview?.dataSource = self
+        tabview?.delegate = self
+        tabview?.contentInset = UIEdgeInsets(top: navigation.bounds.height,
+                                             left: 0,
+                                             bottom: tabBarController?.tabBar.bounds.height ?? 49,
+                                             right: 0)
+    }
 }
+
+
+extension TLYBaseViewController : UITableViewDataSource,UITableViewDelegate{
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0;
+    }
+
+
+}
+

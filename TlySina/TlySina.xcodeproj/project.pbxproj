@@ -91,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BDD212061EB481F800C8B00F /* 主控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				BDD4EF8F1EB2DE9800B1B23B /* TLYMainViewController.swift */,
+				BDD4EF931EB2DED400B1B23B /* TLYNavController.swift */,
+			);
+			name = "主控制器";
+			sourceTree = "<group>";
+		};
 		BDD4EF3C1EB2D72D00B1B23B = {
 			isa = PBXGroup;
 			children = (
@@ -220,9 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				BDD4EFA21EB31EC900B1B23B /* Test */,
-				BDD4EF8F1EB2DE9800B1B23B /* TLYMainViewController.swift */,
+				BDD212061EB481F800C8B00F /* 主控制器 */,
 				BDD4EF911EB2DEAD00B1B23B /* TLYBaseViewController.swift */,
-				BDD4EF931EB2DED400B1B23B /* TLYNavController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -509,6 +517,7 @@
 				BDD4EF5C1EB2D72D00B1B23B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
