@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B830A571615827E018DBE65 /* Pods_TlySina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61FB40AE4EFB592B8BC70B7 /* Pods_TlySina.framework */; };
+		BDD212091EB4DB9C00C8B00F /* VisitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD212081EB4DB9C00C8B00F /* VisitView.swift */; };
+		BDD2120D1EB57CEC00C8B00F /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = BDD2120C1EB57CEC00C8B00F /* main.json */; };
+		BDD212101EB62D4D00C8B00F /* TLYNetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD2120F1EB62D4D00C8B00F /* TLYNetWorkTool.swift */; };
+		BDD212121EB6C3B500C8B00F /* TLYNetWorkTool-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD212111EB6C3B500C8B00F /* TLYNetWorkTool-Extension.swift */; };
 		BDD4EF491EB2D72D00B1B23B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD4EF481EB2D72D00B1B23B /* AppDelegate.swift */; };
 		BDD4EF511EB2D72D00B1B23B /* TlySina.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDD4EF4F1EB2D72D00B1B23B /* TlySina.xcdatamodeld */; };
 		BDD4EF531EB2D72D00B1B23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD4EF521EB2D72D00B1B23B /* Assets.xcassets */; };
@@ -36,6 +41,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35A9B4CED7820D9ED24762D6 /* Pods-TlySina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TlySina.release.xcconfig"; path = "Pods/Target Support Files/Pods-TlySina/Pods-TlySina.release.xcconfig"; sourceTree = "<group>"; };
+		BDD212081EB4DB9C00C8B00F /* VisitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitView.swift; sourceTree = "<group>"; };
+		BDD2120C1EB57CEC00C8B00F /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		BDD2120F1EB62D4D00C8B00F /* TLYNetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLYNetWorkTool.swift; sourceTree = "<group>"; };
+		BDD212111EB6C3B500C8B00F /* TLYNetWorkTool-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TLYNetWorkTool-Extension.swift"; sourceTree = "<group>"; };
 		BDD4EF451EB2D72D00B1B23B /* TlySina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TlySina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD4EF481EB2D72D00B1B23B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDD4EF501EB2D72D00B1B23B /* TlySina.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TlySina.xcdatamodel; sourceTree = "<group>"; };
@@ -78,6 +88,8 @@
 		BDD4EFA01EB2E25400B1B23B /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		BDD4EFA31EB31EEA00B1B23B /* TLYTestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLYTestController.swift; sourceTree = "<group>"; };
 		BDD4EFA51EB3280E00B1B23B /* UIBarButtonItem-Entension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Entension.swift"; sourceTree = "<group>"; };
+		E0011CCAC744EE311A0C750C /* Pods-TlySina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TlySina.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TlySina/Pods-TlySina.debug.xcconfig"; sourceTree = "<group>"; };
+		F61FB40AE4EFB592B8BC70B7 /* Pods_TlySina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TlySina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +97,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B830A571615827E018DBE65 /* Pods_TlySina.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04198FF981038240BFDC592B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F61FB40AE4EFB592B8BC70B7 /* Pods_TlySina.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16B46CE16B3ABA31D79C969F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0011CCAC744EE311A0C750C /* Pods-TlySina.debug.xcconfig */,
+				35A9B4CED7820D9ED24762D6 /* Pods-TlySina.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BDD212061EB481F800C8B00F /* 主控制器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,11 +130,30 @@
 			name = "主控制器";
 			sourceTree = "<group>";
 		};
+		BDD212071EB4DB6100C8B00F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDD212081EB4DB9C00C8B00F /* VisitView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BDD2120E1EB62D2A00C8B00F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BDD2120F1EB62D4D00C8B00F /* TLYNetWorkTool.swift */,
+				BDD212111EB6C3B500C8B00F /* TLYNetWorkTool-Extension.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		BDD4EF3C1EB2D72D00B1B23B = {
 			isa = PBXGroup;
 			children = (
 				BDD4EF471EB2D72D00B1B23B /* TlySina */,
 				BDD4EF461EB2D72D00B1B23B /* Products */,
+				16B46CE16B3ABA31D79C969F /* Pods */,
+				04198FF981038240BFDC592B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +199,7 @@
 		BDD4EF5F1EB2DA7100B1B23B /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				BDD2120E1EB62D2A00C8B00F /* Network */,
 				BDD4EF9F1EB2E1BF00B1B23B /* Extension */,
 				BDD4EF601EB2DA7100B1B23B /* Additions */,
 			);
@@ -228,6 +278,8 @@
 		BDD4EF7E1EB2DA7100B1B23B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				BDD2120C1EB57CEC00C8B00F /* main.json */,
+				BDD212071EB4DB6100C8B00F /* View */,
 				BDD4EFA21EB31EC900B1B23B /* Test */,
 				BDD212061EB481F800C8B00F /* 主控制器 */,
 				BDD4EF911EB2DEAD00B1B23B /* TLYBaseViewController.swift */,
@@ -282,9 +334,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDD4EF5A1EB2D72D00B1B23B /* Build configuration list for PBXNativeTarget "TlySina" */;
 			buildPhases = (
+				DB8863FD7AE8C6A81157D13C /* [CP] Check Pods Manifest.lock */,
 				BDD4EF411EB2D72D00B1B23B /* Sources */,
 				BDD4EF421EB2D72D00B1B23B /* Frameworks */,
 				BDD4EF431EB2D72D00B1B23B /* Resources */,
+				3069EF7BEC071BDC000892AC /* [CP] Embed Pods Frameworks */,
+				FD753312F0804496262D7F5F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,11 +390,60 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD2120D1EB57CEC00C8B00F /* main.json in Resources */,
 				BDD4EF531EB2D72D00B1B23B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3069EF7BEC071BDC000892AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TlySina/Pods-TlySina-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB8863FD7AE8C6A81157D13C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD753312F0804496262D7F5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TlySina/Pods-TlySina-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BDD4EF411EB2D72D00B1B23B /* Sources */ = {
@@ -348,6 +452,7 @@
 			files = (
 				BDD4EF8D1EB2DA7100B1B23B /* UIViewController+CZAddition.m in Sources */,
 				BDD4EF961EB2DF0600B1B23B /* TLYHomeViewController.swift in Sources */,
+				BDD212091EB4DB9C00C8B00F /* VisitView.swift in Sources */,
 				BDD4EF901EB2DE9800B1B23B /* TLYMainViewController.swift in Sources */,
 				BDD4EF861EB2DA7100B1B23B /* NSString+CZHash.m in Sources */,
 				BDD4EF511EB2D72D00B1B23B /* TlySina.xcdatamodeld in Sources */,
@@ -357,6 +462,7 @@
 				BDD4EF831EB2DA7100B1B23B /* NSAttributedString+CZAdditon.m in Sources */,
 				BDD4EF871EB2DA7100B1B23B /* NSString+CZPath.m in Sources */,
 				BDD4EFA11EB2E25400B1B23B /* Bundle+Extension.swift in Sources */,
+				BDD212101EB62D4D00C8B00F /* TLYNetWorkTool.swift in Sources */,
 				BDD4EF851EB2DA7100B1B23B /* NSString+CZBase64.m in Sources */,
 				BDD4EF9A1EB2DF2300B1B23B /* TLYDiscoverController.swift in Sources */,
 				BDD4EF9E1EB2DF3A00B1B23B /* TLYProfileController.swift in Sources */,
@@ -364,6 +470,7 @@
 				BDD4EF921EB2DEAD00B1B23B /* TLYBaseViewController.swift in Sources */,
 				BDD4EF891EB2DA7100B1B23B /* UIColor+CZAddition.m in Sources */,
 				BDD4EF981EB2DF1600B1B23B /* TLYComposeController.swift in Sources */,
+				BDD212121EB6C3B500C8B00F /* TLYNetWorkTool-Extension.swift in Sources */,
 				BDD4EF9C1EB2DF2E00B1B23B /* TLYMessageController.swift in Sources */,
 				BDD4EF8A1EB2DA7100B1B23B /* UILabel+CZAddition.m in Sources */,
 				BDD4EF491EB2D72D00B1B23B /* AppDelegate.swift in Sources */,
@@ -470,6 +577,7 @@
 		};
 		BDD4EF5B1EB2D72D00B1B23B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0011CCAC744EE311A0C750C /* Pods-TlySina.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -485,6 +593,7 @@
 		};
 		BDD4EF5C1EB2D72D00B1B23B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A9B4CED7820D9ED24762D6 /* Pods-TlySina.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

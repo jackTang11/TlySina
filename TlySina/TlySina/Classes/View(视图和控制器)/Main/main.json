@@ -1,0 +1,41 @@
+[
+  {
+    "clsName" : "TLYHomeViewController",
+    "titleName" : "首页",
+    "imageName" : "home",
+    "visiInfos" : {
+      "imageName" : "",
+      "message" : "这是首页"
+    }
+  },
+  {
+    "clsName" : "TLYMessageController",
+    "titleName" : "消息",
+    "imageName" : "message_center",
+    "visiInfos" : {
+      "imageName" : "visitordiscover_image_message",
+      "message" : "这是消息"
+    }
+  },
+  {
+    "clsName" : "UIViewController"
+  },
+  {
+    "clsName" : "TLYDiscoverController",
+    "titleName" : "发现",
+    "imageName" : "discover",
+    "visiInfos" : {
+      "imageName" : "visitordiscover_image_message",
+      "message" : "这是是发现"
+    }
+  },
+  {
+    "clsName" : "TLYProfileController",
+    "titleName" : "我的",
+    "imageName" : "profile",
+    "visiInfos" : {
+      "imageName" : "visitordiscover_image_profile",
+      "message" : "这是我的"
+    }
+  }
+]

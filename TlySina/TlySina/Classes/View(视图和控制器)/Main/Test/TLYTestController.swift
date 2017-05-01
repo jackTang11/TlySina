@@ -21,10 +21,4 @@ extension TLYTestController{
     
     
     
-    override func setupUI() {
-        super.setupUI()
-        
-        
-    }
-    
 }

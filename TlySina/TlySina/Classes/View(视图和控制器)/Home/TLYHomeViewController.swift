@@ -25,6 +25,19 @@ class TLYHomeViewController: TLYBaseViewController {
         
     }
     
+    override func loadData(){
+        
+       
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
+            for i in 0..<20 {
+                self.arrayM.append("这是第\(i)个数据")
+            }
+            self.tabview?.reloadData()
+            self.refresh?.endRefreshing()
+        }
+
+    }
+    
 }
 
 
@@ -49,15 +62,10 @@ extension TLYHomeViewController{
 
 extension TLYHomeViewController{
     
-    override func setupUI() {
-        super.setupUI()
+    override func setTableView() {
+        super.setTableView()
         navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 15, self, action: #selector(showFriends),false)
         tabview?.register(UITableViewCell.self, forCellReuseIdentifier: cell)
-        
-        for i in 0..<20 {
-          arrayM.append("这是第\(i)个数据")
-        }
-        
     }
     
 }

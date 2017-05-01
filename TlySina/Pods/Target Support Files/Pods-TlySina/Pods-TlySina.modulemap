@@ -1,0 +1,6 @@
+framework module Pods_TlySina {
+  umbrella header "Pods-TlySina-umbrella.h"
+
+  export *
+  module * { export * }
+}

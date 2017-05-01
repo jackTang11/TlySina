@@ -10,14 +10,17 @@ import UIKit
 
 class TLYBaseViewController: UIViewController {
 
-    
+    var isUserLogin: Bool = false
     var tabview : UITableView?
+    var refresh : UIRefreshControl?
+    var visinfos : [String: String]?
     lazy var navigation = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.cz_screenWidth(), height: 64))
     lazy var navItem = UINavigationItem()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        loadData()
     }
     
     
@@ -27,14 +30,19 @@ class TLYBaseViewController: UIViewController {
             navItem.title = title
         }
     }
+    
+    
+    func loadData(){
+        refresh?.endRefreshing()
+    }
   
 }
 
 extension TLYBaseViewController{
     
-    func setupUI(){
+   fileprivate func setupUI(){
         setNavBar()
-        setTableView()
+        isUserLogin ? setTableView() : setVisiHomeView()
     }
     
     private func setNavBar(){
@@ -42,11 +50,16 @@ extension TLYBaseViewController{
         view.backgroundColor = UIColor.cz_random()
         navigation.items = [navItem]
         automaticallyAdjustsScrollViewInsets = false
+        //设置navaBar整个背景颜色
+        navigation.barTintColor = UIColor.cz_color(withHex: 0xf6f6f6)
+        //设置navBar的字体颜色
         navigation.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.darkGray]
+        //设置系统按钮的文字渲染的颜色
+        navigation.tintColor = UIColor.orange
     }
     
     
-    private func setTableView(){
+   func setTableView(){
         tabview = UITableView(frame: view.bounds, style: .plain)
         view.insertSubview(tabview!, belowSubview: navigation);
         tabview?.dataSource = self
@@ -55,7 +68,43 @@ extension TLYBaseViewController{
                                              left: 0,
                                              bottom: tabBarController?.tabBar.bounds.height ?? 49,
                                              right: 0)
+        
+        refresh = UIRefreshControl();
+        tabview?.addSubview(refresh!)
+        refresh?.addTarget(self, action:#selector(loadData), for: .valueChanged)
+        
     }
+    
+    
+    private func setVisiHomeView(){
+        let visiHomeView : VisitView = VisitView(frame: view.bounds)
+        self.view.insertSubview(visiHomeView, belowSubview: navigation)
+        visiHomeView.visiInfos = visinfos
+        
+        visiHomeView.loginBtn.addTarget(self, action: #selector(login), for: .touchUpInside)
+         visiHomeView.registBtn.addTarget(self, action: #selector(regist), for: .touchUpInside)
+        
+         navItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .plain, target: self, action:  #selector(regist))
+          navItem.rightBarButtonItem = UIBarButtonItem(title: "登陆", style: .plain, target: self, action:  #selector(login))
+        
+        
+    }
+}
+
+
+extension TLYBaseViewController{
+
+    func login(){
+    
+    
+    }
+    
+    
+    func regist(){
+    
+    
+    }
+
 }
 
 

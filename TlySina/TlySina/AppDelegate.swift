@@ -22,11 +22,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow();
         window?.rootViewController = TLYMainViewController();
         window?.makeKeyAndVisible();
-        
+        loadAppInfo()
         return true
     }
 
+}
+
+extension AppDelegate{
     
+    func loadAppInfo(){
+        
+        DispatchQueue.global().async { 
+            let url =  Bundle.main.url(forResource: "main.json", withExtension: nil)
+            let data = NSData(contentsOf: url!)
+            let doucdir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+            let jsonPath = (doucdir as NSString).appendingPathComponent("main.json")
+            data?.write(toFile: jsonPath, atomically: true)
+            print(jsonPath)
+        }
+    }
 
 }
 

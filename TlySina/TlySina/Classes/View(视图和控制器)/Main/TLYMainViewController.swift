@@ -46,17 +46,25 @@ extension TLYMainViewController {
     //准备自控制器
   fileprivate func setChildController(){
     
-    let array = [
-        ["clsName":"TLYHomeViewController", "titleName":"首页", "imageName":"home"],
-        ["clsName":"TLYMessageController", "titleName":"消息", "imageName":"message_center"],
-        ["clsName":"UIViewController"],
-        ["clsName":"TLYDiscoverController", "titleName":"发现", "imageName":"discover"],
-        ["clsName":"TLYProfileController", "titleName":"我的", "imageName":"profile"],
-    ]
+    let doucdir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+    let jsonPath = (doucdir as NSString).appendingPathComponent("main.json")
+    var data = NSData(contentsOfFile: jsonPath)
+    
+    if data == nil {
+        let path = Bundle.main.path(forResource: "main.json", ofType: nil)
+        data = NSData(contentsOfFile: path!)
+    
+    }
 
+      guard  let array =  try? JSONSerialization.jsonObject(with: data! as Data, options: []) as? [[String:AnyObject]]
+    else {
+        return
+    }
+    
+    
     var arrayM : [UIViewController] = [UIViewController]()
     
-    for dict in array {
+    for dict in array! {
         arrayM.append(controller(dict: dict))
     }
     
@@ -66,20 +74,22 @@ extension TLYMainViewController {
     
     
     //创建控制器
-    private func controller(dict : [String : String]) -> UIViewController{
-        guard let clsName = dict["clsName"],
-            let titleName = dict["titleName"],
-            let imageName = dict["imageName"],
-            let cls = NSClassFromString(Bundle.main.nameSpace + "." + clsName) as? UIViewController.Type
-        else {
-            
+    private func controller(dict : [String : Any]) -> UIViewController{
+        guard let clsName = dict["clsName"] as? String,
+            let titleName = dict["titleName"] as? String,
+            let imageName = dict["imageName"] as? String,
+            let visiDict = dict["visiInfos"] as? [String : String],
+            let cls = NSClassFromString(Bundle.main.nameSpace + "." + clsName) as? TLYBaseViewController.Type
+            else {
             return UIViewController();
             
-        }
+            }
         
         //创建控制器
         let vc = cls.init()
         vc.title = titleName
+        
+        vc.visinfos = visiDict
         
         //设置图像
         vc.tabBarItem.image = UIImage(named: ("tabbar_" + imageName))
