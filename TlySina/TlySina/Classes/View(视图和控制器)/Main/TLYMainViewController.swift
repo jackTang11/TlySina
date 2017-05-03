@@ -18,6 +18,7 @@ class TLYMainViewController: UITabBarController {
 
        setChildController()
        setupComposeButton()
+        setupNewFeatuerView()
     }
     
     
@@ -28,6 +29,41 @@ class TLYMainViewController: UITabBarController {
     }
 
 }
+
+
+extension TLYMainViewController{
+    
+    var isNewVersion : Bool {
+        
+        //获取当前版本号
+        let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
+        
+        ///取出保存在用户偏好中的版本号
+        let path : String = ("version" as NSString).cz_appendDocumentDir()
+        let sandboxVersion = try? String(contentsOfFile: path, encoding: .utf8)
+ 
+        
+       _ = try? currentVersion.write(toFile: path, atomically: true, encoding: .utf8)
+        
+        
+        print(currentVersion)
+        
+        return currentVersion == sandboxVersion
+    }
+    
+    func setupNewFeatuerView(){
+    
+        let v = isNewVersion ?  WBNewFeatureView.newFeature() : WBWelcomView.welcomView()
+        view.addSubview(v)
+        
+    
+    }
+    
+    
+
+
+}
+
 
 extension TLYMainViewController {
     

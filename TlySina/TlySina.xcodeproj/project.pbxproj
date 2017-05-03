@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3B830A571615827E018DBE65 /* Pods_TlySina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61FB40AE4EFB592B8BC70B7 /* Pods_TlySina.framework */; };
+		BD121A6F1EB6D71E00853EDF /* WBStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD121A6E1EB6D71E00853EDF /* WBStatus.swift */; };
+		BD121A721EB86DA800853EDF /* WBWelcomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD121A711EB86DA800853EDF /* WBWelcomView.swift */; };
+		BD121A741EB86DF300853EDF /* WBNewFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD121A731EB86DF300853EDF /* WBNewFeatureView.swift */; };
+		BD121A761EB87C2C00853EDF /* WBWelcomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD121A751EB87C2C00853EDF /* WBWelcomView.xib */; };
+		BD121A781EB889F400853EDF /* WBNewFeatureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD121A771EB889F400853EDF /* WBNewFeatureView.xib */; };
 		BDD212091EB4DB9C00C8B00F /* VisitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD212081EB4DB9C00C8B00F /* VisitView.swift */; };
 		BDD2120D1EB57CEC00C8B00F /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = BDD2120C1EB57CEC00C8B00F /* main.json */; };
 		BDD212101EB62D4D00C8B00F /* TLYNetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD2120F1EB62D4D00C8B00F /* TLYNetWorkTool.swift */; };
@@ -42,6 +47,11 @@
 
 /* Begin PBXFileReference section */
 		35A9B4CED7820D9ED24762D6 /* Pods-TlySina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TlySina.release.xcconfig"; path = "Pods/Target Support Files/Pods-TlySina/Pods-TlySina.release.xcconfig"; sourceTree = "<group>"; };
+		BD121A6E1EB6D71E00853EDF /* WBStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatus.swift; sourceTree = "<group>"; };
+		BD121A711EB86DA800853EDF /* WBWelcomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBWelcomView.swift; sourceTree = "<group>"; };
+		BD121A731EB86DF300853EDF /* WBNewFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNewFeatureView.swift; sourceTree = "<group>"; };
+		BD121A751EB87C2C00853EDF /* WBWelcomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBWelcomView.xib; sourceTree = "<group>"; };
+		BD121A771EB889F400853EDF /* WBNewFeatureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBNewFeatureView.xib; sourceTree = "<group>"; };
 		BDD212081EB4DB9C00C8B00F /* VisitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitView.swift; sourceTree = "<group>"; };
 		BDD2120C1EB57CEC00C8B00F /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		BDD2120F1EB62D4D00C8B00F /* TLYNetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLYNetWorkTool.swift; sourceTree = "<group>"; };
@@ -121,6 +131,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BD121A701EB86D8300853EDF /* NewFeaure */ = {
+			isa = PBXGroup;
+			children = (
+				BD121A711EB86DA800853EDF /* WBWelcomView.swift */,
+				BD121A751EB87C2C00853EDF /* WBWelcomView.xib */,
+				BD121A731EB86DF300853EDF /* WBNewFeatureView.swift */,
+				BD121A771EB889F400853EDF /* WBNewFeatureView.xib */,
+			);
+			path = NewFeaure;
+			sourceTree = "<group>";
+		};
 		BDD212061EB481F800C8B00F /* 主控制器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +213,7 @@
 		BDD4EF5E1EB2DA7100B1B23B /* Model(模型) */ = {
 			isa = PBXGroup;
 			children = (
+				BD121A6E1EB6D71E00853EDF /* WBStatus.swift */,
 			);
 			path = "Model(模型)";
 			sourceTree = "<group>";
@@ -278,6 +300,7 @@
 		BDD4EF7E1EB2DA7100B1B23B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				BD121A701EB86D8300853EDF /* NewFeaure */,
 				BDD2120C1EB57CEC00C8B00F /* main.json */,
 				BDD212071EB4DB6100C8B00F /* View */,
 				BDD4EFA21EB31EC900B1B23B /* Test */,
@@ -390,8 +413,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD121A761EB87C2C00853EDF /* WBWelcomView.xib in Resources */,
 				BDD2120D1EB57CEC00C8B00F /* main.json in Resources */,
 				BDD4EF531EB2D72D00B1B23B /* Assets.xcassets in Resources */,
+				BD121A781EB889F400853EDF /* WBNewFeatureView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +493,10 @@
 				BDD4EF9E1EB2DF3A00B1B23B /* TLYProfileController.swift in Sources */,
 				BDD4EFA41EB31EEA00B1B23B /* TLYTestController.swift in Sources */,
 				BDD4EF921EB2DEAD00B1B23B /* TLYBaseViewController.swift in Sources */,
+				BD121A721EB86DA800853EDF /* WBWelcomView.swift in Sources */,
+				BD121A6F1EB6D71E00853EDF /* WBStatus.swift in Sources */,
 				BDD4EF891EB2DA7100B1B23B /* UIColor+CZAddition.m in Sources */,
+				BD121A741EB86DF300853EDF /* WBNewFeatureView.swift in Sources */,
 				BDD4EF981EB2DF1600B1B23B /* TLYComposeController.swift in Sources */,
 				BDD212121EB6C3B500C8B00F /* TLYNetWorkTool-Extension.swift in Sources */,
 				BDD4EF9C1EB2DF2E00B1B23B /* TLYMessageController.swift in Sources */,

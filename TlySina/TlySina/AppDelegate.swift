@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,10 +20,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         
+        if #available(iOS 10.0, *) {
+            UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.badge,.carPlay]) { (success, error) in
+                print("授权" + (success ? "成功" : "失败"))
+            }
+        } else { //ios 8.0
+            let notificationSetting = UIUserNotificationSettings(types: [.alert,.badge,.sound], categories: nil)
+            application.registerUserNotificationSettings(notificationSetting)
+
+        }
+        
         window = UIWindow();
         window?.rootViewController = TLYMainViewController();
         window?.makeKeyAndVisible();
         loadAppInfo()
+        
+        
+    
         return true
     }
 
