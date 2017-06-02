@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDFDA7741ECD352D00386249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFDA7731ECD352D00386249 /* AppDelegate.swift */; };
+		BDFDA7761ECD352D00386249 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFDA7751ECD352D00386249 /* ViewController.swift */; };
+		BDFDA7791ECD352D00386249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFDA7771ECD352D00386249 /* Main.storyboard */; };
+		BDFDA77C1ECD352D00386249 /* TLYTV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDFDA77A1ECD352D00386249 /* TLYTV.xcdatamodeld */; };
+		BDFDA77E1ECD352D00386249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFDA77D1ECD352D00386249 /* Assets.xcassets */; };
+		BDFDA7811ECD352D00386249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFDA77F1ECD352D00386249 /* LaunchScreen.storyboard */; };
+		BDFDA7891ECD360400386249 /* readme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFDA7881ECD360400386249 /* readme.swift */; };
+		BDFDA78B1ECD3AD300386249 /* read.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BDFDA78A1ECD3AD300386249 /* read.rtf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BDFDA7701ECD352D00386249 /* TLYTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLYTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDFDA7731ECD352D00386249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDFDA7751ECD352D00386249 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDFDA7781ECD352D00386249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDFDA77B1ECD352D00386249 /* TLYTV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TLYTV.xcdatamodel; sourceTree = "<group>"; };
+		BDFDA77D1ECD352D00386249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDFDA7801ECD352D00386249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDFDA7821ECD352D00386249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDFDA7881ECD360400386249 /* readme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = readme.swift; sourceTree = "<group>"; };
+		BDFDA78A1ECD3AD300386249 /* read.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = read.rtf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDFDA76D1ECD352D00386249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDFDA7671ECD352D00386249 = {
+			isa = PBXGroup;
+			children = (
+				BDFDA7721ECD352D00386249 /* TLYTV */,
+				BDFDA7711ECD352D00386249 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDFDA7711ECD352D00386249 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDFDA7701ECD352D00386249 /* TLYTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDFDA7721ECD352D00386249 /* TLYTV */ = {
+			isa = PBXGroup;
+			children = (
+				BDFDA7731ECD352D00386249 /* AppDelegate.swift */,
+				BDFDA7751ECD352D00386249 /* ViewController.swift */,
+				BDFDA7771ECD352D00386249 /* Main.storyboard */,
+				BDFDA77D1ECD352D00386249 /* Assets.xcassets */,
+				BDFDA77F1ECD352D00386249 /* LaunchScreen.storyboard */,
+				BDFDA7821ECD352D00386249 /* Info.plist */,
+				BDFDA77A1ECD352D00386249 /* TLYTV.xcdatamodeld */,
+				BDFDA7881ECD360400386249 /* readme.swift */,
+				BDFDA78A1ECD3AD300386249 /* read.rtf */,
+			);
+			path = TLYTV;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDFDA76F1ECD352D00386249 /* TLYTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDFDA7851ECD352D00386249 /* Build configuration list for PBXNativeTarget "TLYTV" */;
+			buildPhases = (
+				BDFDA76C1ECD352D00386249 /* Sources */,
+				BDFDA76D1ECD352D00386249 /* Frameworks */,
+				BDFDA76E1ECD352D00386249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLYTV;
+			productName = TLYTV;
+			productReference = BDFDA7701ECD352D00386249 /* TLYTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDFDA7681ECD352D00386249 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = jack_tang;
+				TargetAttributes = {
+					BDFDA76F1ECD352D00386249 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BDFDA76B1ECD352D00386249 /* Build configuration list for PBXProject "TLYTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDFDA7671ECD352D00386249;
+			productRefGroup = BDFDA7711ECD352D00386249 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDFDA76F1ECD352D00386249 /* TLYTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDFDA76E1ECD352D00386249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDFDA7811ECD352D00386249 /* LaunchScreen.storyboard in Resources */,
+				BDFDA77E1ECD352D00386249 /* Assets.xcassets in Resources */,
+				BDFDA78B1ECD3AD300386249 /* read.rtf in Resources */,
+				BDFDA7791ECD352D00386249 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDFDA76C1ECD352D00386249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDFDA7761ECD352D00386249 /* ViewController.swift in Sources */,
+				BDFDA7891ECD360400386249 /* readme.swift in Sources */,
+				BDFDA77C1ECD352D00386249 /* TLYTV.xcdatamodeld in Sources */,
+				BDFDA7741ECD352D00386249 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BDFDA7771ECD352D00386249 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDFDA7781ECD352D00386249 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDFDA77F1ECD352D00386249 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDFDA7801ECD352D00386249 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDFDA7831ECD352D00386249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDFDA7841ECD352D00386249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDFDA7861ECD352D00386249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TLYTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.TLYTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BDFDA7871ECD352D00386249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TLYTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.TLYTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDFDA76B1ECD352D00386249 /* Build configuration list for PBXProject "TLYTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDFDA7831ECD352D00386249 /* Debug */,
+				BDFDA7841ECD352D00386249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDFDA7851ECD352D00386249 /* Build configuration list for PBXNativeTarget "TLYTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDFDA7861ECD352D00386249 /* Debug */,
+				BDFDA7871ECD352D00386249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BDFDA77A1ECD352D00386249 /* TLYTV.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BDFDA77B1ECD352D00386249 /* TLYTV.xcdatamodel */,
+			);
+			currentVersion = BDFDA77B1ECD352D00386249 /* TLYTV.xcdatamodel */;
+			path = TLYTV.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BDFDA7681ECD352D00386249 /* Project object */;
+}

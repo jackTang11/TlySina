@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionNormalCell" customModule="TlyDou" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="210" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="210" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="2cB-gO-PT5">
+                        <rect key="frame" x="0.0" y="217" width="18" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="44z-AL-JbS"/>
+                            <constraint firstAttribute="width" constant="18" id="acg-L5-cdN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qh2-Tb-UFw">
+                        <rect key="frame" x="22" y="219" width="183" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="guf-3F-PDF">
+                        <rect key="frame" x="0.0" y="0.0" width="210" height="212"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="很厉害吧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1z-Xl-MqU">
+                        <rect key="frame" x="0.0" y="198" width="45" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAh-rg-Kwl">
+                        <rect key="frame" x="136" y="197" width="66" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="2897在线" image="Image_online"/>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="guf-3F-PDF" secondAttribute="trailing" id="0nm-T7-WSf"/>
+                <constraint firstItem="2cB-gO-PT5" firstAttribute="top" secondItem="guf-3F-PDF" secondAttribute="bottom" constant="5" id="5QY-UQ-GEV"/>
+                <constraint firstItem="zAh-rg-Kwl" firstAttribute="centerY" secondItem="M1z-Xl-MqU" secondAttribute="centerY" id="6aS-77-vQH"/>
+                <constraint firstItem="2cB-gO-PT5" firstAttribute="centerY" secondItem="qh2-Tb-UFw" secondAttribute="centerY" id="6nJ-Ua-kO0"/>
+                <constraint firstItem="2cB-gO-PT5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6nO-Uj-buC"/>
+                <constraint firstItem="2cB-gO-PT5" firstAttribute="top" secondItem="M1z-Xl-MqU" secondAttribute="bottom" constant="5" id="H6F-6R-pus"/>
+                <constraint firstItem="M1z-Xl-MqU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WRv-X5-zeE"/>
+                <constraint firstAttribute="trailing" secondItem="qh2-Tb-UFw" secondAttribute="trailing" constant="5" id="Wih-Hg-cAn"/>
+                <constraint firstAttribute="bottom" secondItem="2cB-gO-PT5" secondAttribute="bottom" constant="5" id="Z2j-ok-KZE"/>
+                <constraint firstItem="guf-3F-PDF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bgM-pa-qvW"/>
+                <constraint firstItem="guf-3F-PDF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kE1-cv-TaT"/>
+                <constraint firstItem="qh2-Tb-UFw" firstAttribute="leading" secondItem="2cB-gO-PT5" secondAttribute="trailing" constant="4" id="nbb-KI-FNt"/>
+                <constraint firstAttribute="trailing" secondItem="zAh-rg-Kwl" secondAttribute="trailing" constant="8" id="oe9-GN-TSr"/>
+            </constraints>
+            <size key="customSize" width="210" height="240"/>
+            <connections>
+                <outlet property="descName" destination="M1z-Xl-MqU" id="M23-J5-X5W"/>
+                <outlet property="imageV" destination="guf-3F-PDF" id="ilC-3A-BnV"/>
+                <outlet property="numberLine" destination="zAh-rg-Kwl" id="75Z-au-pYj"/>
+                <outlet property="titleName" destination="qh2-Tb-UFw" id="nZu-jM-YJx"/>
+            </connections>
+            <point key="canvasLocation" x="-31" y="42"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image_online" width="16" height="16"/>
+        <image name="Img_default" width="172" height="103"/>
+        <image name="home_live_cate_normal" width="14" height="14"/>
+    </resources>
+</document>

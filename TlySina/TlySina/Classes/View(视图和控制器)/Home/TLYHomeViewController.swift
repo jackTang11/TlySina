@@ -66,6 +66,7 @@ extension TLYHomeViewController{
         super.setTableView()
         navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 15, self, action: #selector(showFriends),false)
         tabview?.register(UITableViewCell.self, forCellReuseIdentifier: cell)
+        tabview?.rowHeight = UITableViewAutomaticDimension
     }
     
 }

@@ -138,9 +138,24 @@ extension TLYMainViewController {
         vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName:UIFont.systemFont(ofSize: 12)], for: .normal)
         
         let nav = TLYNavController(rootViewController: vc)
-        return nav;
         
+        return nav;
     
+    }
+    
+    func test(){
+        //调度组使用
+      let group = DispatchGroup()
+        //进入
+        group.enter()
+        
+        //离开
+        group.leave()
+        //通知结束
+        group.notify(queue: DispatchQueue.main) { 
+            
+        }
+        
     }
     
     

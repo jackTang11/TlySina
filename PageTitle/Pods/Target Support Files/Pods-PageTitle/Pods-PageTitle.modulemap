@@ -1,0 +1,6 @@
+framework module Pods_PageTitle {
+  umbrella header "Pods-PageTitle-umbrella.h"
+
+  export *
+  module * { export * }
+}
